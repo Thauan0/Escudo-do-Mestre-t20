@@ -31,7 +31,7 @@ h1 {
     width: 80px; /* Tamanho do ícone */
     height: 80px; /* Tamanho do ícone */
     border-radius: 50%; /* Formato arredondado */
-    background-image: url('path/to/icon.png'); /* Substitua pelo caminho do seu ícone */
+    background-image: url('../public/imgs/logo.png'); /* Substitua pelo caminho do seu ícone */
     background-size: cover; /* Ajusta a imagem de fundo */
     margin-bottom: 10px; /* Espaço abaixo do ícone */
     transition: transform 0.3s ease; /* Suaviza a transformação */
@@ -529,3 +529,100 @@ scrollbar-width: thin; /* Para Firefox */
 scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com vermelho transparente */
 
 
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Reduz o tamanho do título */
+        padding-bottom: 15px;
+    }
+
+    .header-content {
+        flex-direction: column; /* Empilha o conteúdo verticalmente em telas menores */
+        text-align: center;
+    }
+
+    .icon {
+        width: 60px; /* Reduz o tamanho do ícone */
+        height: 60px;
+    }
+
+    nav ul li {
+        display: block; /* Empilha os itens do menu verticalmente */
+        margin: 10px 0; /* Espaçamento entre os itens */
+    }
+
+    main {
+        max-width: 90%; /* Aumenta a largura em telas menores */
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .npc-item, .local-item {
+        flex-direction: column; /* Empilha o conteúdo dos itens */
+        text-align: center;
+    }
+
+    .npc-image, .local-image {
+        width: 50px; /* Ajusta o tamanho das imagens */
+        height: 50px;
+        margin-bottom: 10px; /* Espaço entre imagem e conteúdo */
+        margin-right: 0; /* Remove o espaçamento lateral */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduz o tamanho dos subtítulos */
+    }
+
+    input, textarea {
+        font-size: 1em; /* Ajusta o tamanho do texto nos campos */
+    }
+
+    button {
+        padding: 0.6em 1em; /* Ajusta o padding para telas menores */
+        font-size: 1em; /* Ajusta o tamanho do texto nos botões */
+    }
+}
+
+/* Ajustes para telas muito pequenas, como smartphones em modo retrato */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Reduz o título ainda mais */
+    }
+
+    .icon {
+        width: 50px; /* Ajuste adicional no tamanho do ícone */
+        height: 50px;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espaçamento reduzido entre itens do menu */
+    }
+
+    main {
+        padding: 10px; /* Ajusta o padding para telas pequenas */
+    }
+
+    .npc-item, .local-item {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    input, textarea {
+        padding: 10px; /* Reduz o espaçamento interno */
+        font-size: 0.9em; /* Reduz o tamanho da fonte */
+    }
+
+    button {
+        padding: 0.5em 0.8em;
+        font-size: 0.9em; /* Ajuste adicional para o botão */
+    }
+}

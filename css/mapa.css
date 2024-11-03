@@ -1,3 +1,5 @@
+
+
 body {
     background-image: url('../public/imgs/bounty3.jpg'); /* Caminho para a imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir toda a área */
@@ -7,6 +9,9 @@ body {
     margin: 0; /* Remove margens padrão do corpo */
     font-family: Arial, sans-serif; /* Define uma fonte padrão */
 }
+
+
+
 /* Estilo para a seção das anotações */
 .card {
     width: 80%; /* Largura responsiva */
