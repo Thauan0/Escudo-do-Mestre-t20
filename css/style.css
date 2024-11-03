@@ -1,6 +1,47 @@
 * {
     box-sizing: border-box;
 }
+header {
+    background: linear-gradient(90deg, #000000, #000000); /* Gradiente para o cabeçalho */
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    display: flex; /* Usando flexbox para alinhar horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+h1 {
+    font-size: 24px; /* Tamanho do título */
+    color: rgb(255, 255, 255); /* Cor do título */
+    text-align: center; /* Centraliza o texto */
+    transition: color 0.3s ease, transform 0.3s ease; /* Suaviza a mudança de cor e transformação */
+}
+
+.h1:hover {
+    color: #ff5733; /* Muda a cor do título ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do título em 10% */
+}
+
+.icon {
+    width: 80px; /* Tamanho do ícone */
+    height: 80px; /* Tamanho do ícone */
+    border-radius: 50%; /* Formato arredondado */
+    background-image: url('path/to/icon.png'); /* Substitua pelo caminho do seu ícone */
+    background-size: cover; /* Ajusta a imagem de fundo */
+    margin-bottom: 10px; /* Espaço abaixo do ícone */
+    transition: transform 0.3s ease; /* Suaviza a transformação */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
+}
+
+
 body {
     background-image: url('../public/imgs/21\ -\ O\ Panteao.jpg'); /* Define a imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir toda a tela */
