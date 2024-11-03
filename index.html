@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escudo do Mestre - RPG</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Escudo do Mestre</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Cadastrar NPC</a></li>
+                <li><a href="Mapa.html">Cadastrar Local</a></li>
+                <li><a href="#cadastro-missao">Cadastrar Missão</a></li>
+                <li><a href="#notas">Notas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cadastro-npc">
+            <div class="card">
+                <h2>Cadastrar NPC</h2>
+                <form id="form-npc">
+                    <input type="text" id="nome-npc" placeholder="Nome do NPC" required>
+                    <input type="text" id="papel-npc" placeholder="Papel do NPC" required>
+                    <textarea id="descricao-npc" placeholder="Descrição breve do NPC" required></textarea>
+                    <input type="file" id="imagem-npc" accept="image/*">
+                    <button type="submit" class="cadastrar-npc">
+                        <span>Cadastrar NPC</span>
+                    </button>
+                </form>
+                <ul id="lista-npcs"></ul>
+                <div class="loader"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Escudo do Mestre - Todos os direitos reservados</p>
+    </footer>
+
+   <script src="Javascript/script.js"></script>
+    
+</body>
+</html>

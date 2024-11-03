@@ -1,0 +1,216 @@
+body {
+    background-image: url('../public/imgs/bounty3.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem no fundo enquanto rola */
+    margin: 0; /* Remove margens padrão do corpo */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
+/* Estilo para a seção das anotações */
+.card {
+    width: 80%; /* Largura responsiva */
+    max-width: 900px; /* Limite máximo para largura */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    margin: 20px auto; /* Centraliza a seção */
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.5); /* Cor de fundo clara com 50% de opacidade */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    padding: 20px; /* Espaçamento interno */
+}
+
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    color: #ff0000; /* Define a cor do texto como branca */
+}
+
+
+iframe {
+    border: none; /* Remove a borda padrão do iframe */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 900px; /* Largura máxima */
+    height: 600px; /* Altura fixa */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente */
+    display: block; /* Garante que o iframe se comporte como um bloco */
+    margin: 20px auto; /* Centraliza */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+iframe:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+}
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem vertical */
+    background: url('../public/imgs/21\ -\ O\ Panteao.jpg'); /* Fundo da barra de rolagem */
+    background-size: cover; /* Faz a imagem cobrir toda a barra */
+}
+
+/* Estilizando o polegar (a parte que se move) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.6); /* Fundo vermelho com transparência para o polegar */
+    border-radius: 6px; /* Bordas arredondadas */
+}
+
+/* Efeito de transição suave ao passar o mouse sobre o polegar */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 0, 0, 0.8); /* Vermelho mais intenso ao passar o mouse */
+}
+
+/* Escondendo as setas padrão */
+::-webkit-scrollbar-button {
+    display: none; /* Esconde as setas padrão */
+}
+
+/* Estilizando a barra de rolagem para Firefox */
+scrollbar-width: thin; /* Para Firefox */
+scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com vermelho transparente */.anotacoes-container {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    margin: 20px; /* Margem para espaçamento */
+    text-align: center; /* Centraliza o texto do título */
+}
+.anotacoes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os elementos horizontalmente */
+    margin: 20px;
+    text-align: center;
+}
+
+.anotacoes-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o título */
+}
+
+.post-it-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os post-its */
+    width: 100%;
+    max-width: 1000px;
+}
+
+.post-it {
+    background-color: rgba(255, 255, 220, 0.95);
+    border: 1px solid #bdae7a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 200px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-it:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.post-it-textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.post-it-textarea:focus {
+    outline: none;
+    background-color: rgba(255, 255, 220, 0.85);
+}
+
+/* Centraliza o botão */
+.add-post-it {
+    display: block; /* Garante que o botão se comporte como um bloco */
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-post-it:hover {
+    background-color: #0056b3;
+}
+
+
+header {
+    background: linear-gradient(90deg, #000000, #000000); /* Gradiente para o cabeçalho */
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 5px solid  rgba(0, 0, 0, 0.5)
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(236, 238, 255, 0.6); /* Sombra forte para o título */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    background-image: url('../public/imgs/21\ -\ O\ Panteao.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o nav */
+    background-position: center; /* Centraliza a imagem */
+    padding:5px 0;
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 100%; /* Faz o menu ocupar toda a largura da página */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 17, 0, 0.5); /* Sombra para destacar o menu */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px; /* Espaço entre os itens do menu */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s ease-in-out; /* Adicione ease-in-out para um efeito mais suave */
+}
+
+nav a:hover {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #fa4700;
+    transform: scale(1.15) rotate(1deg); /* Aumenta o tamanho em 15% e aplica uma leve rotação */
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0); /* Fundo totalmente transparente */
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.8); /* Sombra mais pronunciada */
+    color: white;
+}
+
+
+
