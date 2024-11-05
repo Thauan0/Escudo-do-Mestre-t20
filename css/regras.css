@@ -176,46 +176,46 @@ iframe::-webkit-scrollbar-thumb:hover {
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .sidebar {
-        width: 150px; /* Reduz a largura da sidebar em telas menores */
+        width: 150px; 
     }
 
     .content {
-        margin-left: 150px; /* Ajusta o espaço da área de conteúdo */
+        margin-left: 150px;
     }
 
     iframe {
-        height: calc(100vh - 60px); /* Ajusta a altura do iframe */
+        height: calc(100vh - 60px); 
     }
 
     #menu-toggle {
-        padding: 8px; /* Ajusta o padding do botão em telas menores */
+        padding: 8px; 
     }
 }
 
 @media (max-width: 480px) {
     .sidebar {
-        width: 100%; /* Sidebar ocupa toda a largura em celulares */
+        width: 100%;
     }
 
     .content {
-        margin-left: 0; /* Remove margem esquerda para conteúdo */
-        padding: 10px; /* Ajusta padding em celulares */
+        margin-left: 0; 
+        padding: 10px;
     }
 
     iframe {
-        height: calc(100vh - 50px); /* Ajusta a altura do iframe */
+        height: calc(100vh - 50px);
     }
 
     .sidebar h1 {
-        font-size: 18px; /* Reduz o tamanho da fonte do título */
+        font-size: 18px; 
     }
 
     .sidebar ul li {
-        padding: 10px; /* Ajusta o padding das opções do menu */
+        padding: 10px; 
     }
 
     #menu-toggle {
-        top: 5px; /* Ajusta a posição do botão */
-        left: 5px; /* Ajusta a posição do botão */
+        top: 5px; 
+        left: 5px; 
     }
 }

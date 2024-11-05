@@ -43,13 +43,13 @@ h1 {
 
 
 body {
-    background-image: url('../public/imgs/21\ -\ O\ Panteao.jpg'); /* Define a imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    margin: 0; /* Remove margens padrão do body */
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    position: relative; /* Necessário para o uso do pseudo-elemento */
+    background-image: url('../public/imgs/21\ -\ O\ Panteao.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    position: relative; 
 }
 
 body::before {
@@ -59,37 +59,36 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Adiciona uma camada escura semi-transparente */
-    pointer-events: none; /* Garante que a camada não interfira na interação com o conteúdo */
-    z-index: -1; /* Coloca a camada atrás de qualquer conteúdo */
+    background: rgba(0, 0, 0, 0.6); 
+    pointer-events: none; 
+    z-index: -1; 
 }
 
 
 
 .main-background {
-    position: fixed; /* Fixa a camada de fundo */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Camada escura semi-transparente */
-    z-index: -1; /* Coloca a camada abaixo do conteúdo */
+    background-color: rgba(0, 0, 0, 0.5); 
+        z-index: -1; 
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Fundo escuro e opaco para contraste */
+    background: rgba(0, 0, 0, 0.6); 
     border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Sombra mais pronunciada */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); 
 }
 
 
-/* Continue com os outros estilos conforme necessário... */
 
 header {
-    background: linear-gradient(90deg, #000000, #000000); /* Gradiente para o cabeçalho */
+    background: linear-gradient(90deg, #000000, #000000); 
     color: #ffffff;
     padding: 30px;
     text-align: center;
@@ -100,19 +99,19 @@ header h1 {
     margin: 0;
     font-size: 3em;
     padding-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(236, 238, 255, 0.6); /* Sombra forte para o título */
+    text-shadow: 2px 2px 8px rgba(236, 238, 255, 0.6);
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    background-color: rgba(0, 0, 0, 0.5); 
     background-image: url('../public/imgs/bounty2.jpg');
-    background-size: cover; /* Faz a imagem cobrir todo o nav */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; 
+    background-position: center; 
     padding:5px 0;
-    border-radius: 10px; /* Bordas arredondadas */
-    width: 100%; /* Faz o menu ocupar toda a largura da página */
+    border-radius: 10px; 
+    width: 100%; 
     text-align: center;
-    box-shadow: 0 4px 15px rgba(255, 17, 0, 0.5); /* Sombra para destacar o menu */
+    box-shadow: 0 4px 15px rgba(255, 17, 0, 0.5); 
 }
 
 nav ul {
@@ -123,19 +122,19 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px; /* Espaço entre os itens do menu */
+    margin: 0 20px;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, text-shadow 0.3s, transform 0.3s ease-in-out; /* Adicione ease-in-out para um efeito mais suave */
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s ease-in-out;
 }
 
 nav a:hover {
     text-shadow: 0 0 5px #ff0000, 0 0 10px #fa4700;
-    transform: scale(1.15) rotate(1deg); /* Aumenta o tamanho em 15% e aplica uma leve rotação */
+    transform: scale(1.15) rotate(1deg); 
 }
 
 
@@ -144,9 +143,9 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0); /* Fundo totalmente transparente */
+    background: rgba(255, 255, 255, 0); 
     border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.8); /* Sombra mais pronunciada */
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.8);
     color: white;
 }
 
@@ -161,32 +160,31 @@ section {
     margin-bottom: 15px;
     padding: 15px;
     border-radius: 8px;
-    background-color: rgba(255, 249, 249, 0.1); /* Fundo levemente iluminado */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    background-color: rgba(255, 249, 249, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .npc-item:hover, .local-item:hover {
-    background-color: rgba(255, 0, 0, 0.2); /* Destaque ao passar o mouse */
-    transform: translateY(-2px); /* Levanta o item ao passar o mouse */
+    background-color: rgba(255, 0, 0, 0.2); 
+    transform: translateY(-2px);
 }
 
 .npc-image, .local-image {
     width: 60px;
     height: 60px;
-    border-radius: 8px; /* Bordas arredondadas mais suaves */
+    border-radius: 8px;
     margin-right: 15px;
     transition: transform 0.3s ease, filter 0.3s ease;
-    filter: brightness(0.85); /* Levemente escurecido */
+    filter: brightness(0.85); 
 }
 
 .npc-item:hover .npc-image,
 .local-item:hover .local-image {
-    transform: scale(1.1); /* Aumenta o tamanho da imagem ao passar o mouse */
-    filter: brightness(1); /* Torna a imagem mais nítida */
+    transform: scale(1.1); 
+    filter: brightness(1);
 }
 
-/* From Uiverse.io by mobinkakei */ 
 .loader {
     width: 54px;
     height: 54px;
@@ -262,7 +260,7 @@ h2 {
     border-bottom: 2px solid #007BFF;
     padding-bottom: 10px;
     text-align: center;
-    margin: 20px 0; /* Espaçamento vertical ao redor do título */
+    margin: 20px 0; 
 }
 
 form {
@@ -272,46 +270,46 @@ form {
 
 input, textarea {
     margin: 10px 0;
-    padding: 12px; /* Espaçamento interno dos inputs */
-    border: 2px solid #007BFF; /* Borda colorida */
+    padding: 12px; 
+    border: 2px solid #007BFF;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.1); /* Fundo levemente iluminado */
-    transition: border-color 0.3s, background 0.3s; /* Transições suaves */
+    background: rgba(255, 255, 255, 0.1); 
+    transition: border-color 0.3s, background 0.3s; 
 }
 
 input:focus, textarea:focus {
-    border-color: #0056b3; /* Mudança de cor ao focar */
-    background: rgba(255, 255, 255, 0.2); /* Fundo mais claro ao focar */
+    border-color: #0056b3;
+    background: rgba(255, 255, 255, 0.2); 
 }
 
 button {
-    padding: 0.7em 1.2em; /* Espaçamento interno do botão */
-    margin: 10px 0; /* Espaçamento entre os botões */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Mostra que o botão é clicável */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para cor de fundo e transformação */
+    padding: 0.7em 1.2em; 
+    margin: 10px 0; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 button:hover {
-    opacity: 0.9; /* Leve transparência ao passar o mouse */
-    transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+    opacity: 0.9; 
+    transform: translateY(-2px); 
 }
 
 button.editar {
-    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo para o botão de editar */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 button.editar:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Cor ao passar o mouse no botão de editar */
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 button.excluir {
-    background-color: rgba(255, 0, 0, 0.2); /* Cor de fundo para o botão de excluir */
+    background-color: rgba(255, 0, 0, 0.2);
 }
 
 button.excluir:hover {
-    background-color: rgba(255, 0, 0, 0.3); /* Cor ao passar o mouse no botão de excluir */
+    background-color: rgba(255, 0, 0, 0.3); 
 }
 
 ul {
@@ -330,95 +328,92 @@ footer {
 }
 
 #lista-locais {
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o preenchimento da lista */
-}
+    list-style: none; 
+        padding: 0;
+    }
 
 #lista-locais li {
-    position: relative; /* Permite que os filhos usem posição absoluta */
-    margin: 10px 0; /* Espaçamento entre os itens da lista */
-    padding: 15px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 5px; /* Bordas arredondadas */
-    background-color: rgba(50, 50, 50, 0.8); /* Fundo mais escuro para os itens da lista */
-    color: #ffffff; /* Texto claro */
+    position: relative; 
+    margin: 10px 0; 
+    padding: 15px; 
+    border: 1px solid #ccc;
+        border-radius: 5px;
+    background-color: rgba(50, 50, 50, 0.8); 
+    color: #ffffff;
 }
 
-/* Centralizando o conteúdo do card */
 .card {
     display: flex;
-    flex-direction: column; /* Organiza os filhos em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente, se necessário */
-    padding: 1em; /* Adiciona um pouco de preenchimento interno ao card */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+        padding: 1em; 
 }
 
 .npc-card {
     display: flex;
-    flex-direction: column; /* Coloca os elementos em uma coluna */
-    margin: 1em 0; /* Espaçamento entre NPCs */
-    padding: 1em; /* Preenchimento interno */
-    border: 1px solid #ccc; /* Borda ao redor do card */
-    border-radius: 0.5em; /* Bordas arredondadas */
+    flex-direction: column; 
+    margin: 1em 0; 
+    padding: 1em; 
+    border: 1px solid #ccc; 
+    border-radius: 0.5em; 
 }
 
 .descricao {
-    margin-bottom: 0.5em; /* Espaçamento abaixo da descrição */
-    word-wrap: break-word; /* Quebra palavras longas se necessário */
+    margin-bottom: 0.5em; 
+    word-wrap: break-word; 
 }
 
 .actions {
-    display: flex; /* Cria um contêiner flexível */
-    justify-content: flex-end; /* Alinha os botões à direita */
-    margin-top: auto; /* Empurra os botões para o final do card */
+    display: flex;
+    justify-content: flex-end; 
+        margin-top: auto; 
 }
 
 button {
-    margin-left: 0.5em; /* Espaçamento entre os botões */
+    margin-left: 0.5em; 
 }
 
 
-/* Estilo do botão Cadastrar NPC */
+
 button.cadastrar-npc {
     padding: 0.1em 0.25em;
-    width: 13em; /* Ajuste a largura conforme necessário */
-    height: 4.2em; /* Ajuste a altura conforme necessário */
-    background-color: #212121; /* Cor de fundo do botão */
-    border: 0.08em solid #fff; /* Borda do botão */
-    border-radius: 0.3em; /* Bordas arredondadas */
-    font-size: 12px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor como ponteiro ao passar sobre o botão */
-    display: flex; /* Permite a centralização do conteúdo interno */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 13em; 
+    height: 4.2em;
+    background-color: #212121; 
+    border: 0.08em solid #fff;
+    border-radius: 0.3em; 
+    font-size: 12px;/* Tamanho da fonte */
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
 
-/* Estilo do span dentro do botão */
+
 button.cadastrar-npc span {
     position: relative;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    width: 100%; /* Faz o span ocupar toda a largura do botão */
-    height: 100%; /* Faz o span ocupar toda a altura do botão */
-    background-color: #212121; /* Cor de fundo do span */
-    border-radius: 0.2em; /* Bordas arredondadas do span */
-    font-size: 1.5em; /* Tamanho da fonte do span */
-    color: #fff; /* Cor do texto */
-    border: 0.08em solid #fff; /* Borda do span */
-    box-shadow: 0 0.4em 0.1em 0.019em #fff; /* Sombra do span */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #212121;
+    border-radius: 0.2em; 
+    font-size: 1.5em; 
+    color: #fff; 
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
 }
 
 button.cadastrar-npc span:hover {
-    transition: all 0.5s; /* Transição suave ao passar o mouse */
-    transform: translate(0, 0.4em); /* Eleva o botão */
-    box-shadow: 0 0 0 0 #fff; /* Remove a sombra ao passar o mouse */
+    transition: all 0.5s;
+    transform: translate(0, 0.4em); 
+    box-shadow: 0 0 0 0 #fff;
 }
 
 button.cadastrar-npc span:not(:hover) {
-    transition: all 1s; /* Transição suave quando não estiver em hover */
-}
-/* Estilo da seção de cadastro com fundo totalmente transparente */
+    transition: all 1s; 
 #cadastro-npc {
     display: flex;
     justify-content: center;
@@ -427,14 +422,14 @@ button.cadastrar-npc span:not(:hover) {
 }
 
 .card {
-    background: rgba(0, 0, 0, 0.5); /* Fundo totalmente transparente (meio transparente preto) */
+    background: rgba(0, 0, 0, 0.5);
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra sutil para destaque */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 500px;
     text-align: center;
-    border: none; /* Sem borda */
+    border: none; 
 }
 
 .card h2 {
@@ -451,7 +446,7 @@ button.cadastrar-npc span:not(:hover) {
 #form-npc input[type="text"],
 #form-npc textarea,
 #form-npc input[type="file"] {
-    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente para os campos */
+    background: rgba(255, 255, 255, 0.2); 
     border: none;
     padding: 12px;
     margin-bottom: 15px;
@@ -463,18 +458,18 @@ button.cadastrar-npc span:not(:hover) {
 
 #form-npc input[type="text"]::placeholder,
 #form-npc textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Placeholder branco com opacidade */
+    color: rgba(255, 255, 255, 0.7); 
 }
 
 #form-npc input[type="text"]:focus,
 #form-npc textarea:focus,
 #form-npc input[type="file"]:focus {
-    background: rgba(255, 255, 255, 0.3); /* Destaque ao focar */
+    background: rgba(255, 255, 255, 0.3); 
     outline: none;
 }
 
 .cadastrar-npc {
-    background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Gradiente para o botão */
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
     border: none;
     padding: 12px;
     border-radius: 8px;
@@ -486,7 +481,7 @@ button.cadastrar-npc span:not(:hover) {
 }
 
 .cadastrar-npc:hover {
-    background: linear-gradient(135deg, #ffc371, #ff5f6d); /* Inverte as cores no hover */
+    background: linear-gradient(135deg, #ffc371, #ff5f6d); 
     transform: translateY(-2px);
 }
 
@@ -501,111 +496,103 @@ button.cadastrar-npc span:not(:hover) {
 
 
 
-/* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {
-    width: 12px; /* Largura da barra de rolagem vertical */
+    width: 12px; 
     background: url('../public/imgs/21 - O Panteao.jpg');
-    background-size: cover; /* Faz a imagem cobrir toda a barra */
+    background-size: cover; 
 }
 
-/* Estilizando o polegar (a parte que se move) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.6); /* Fundo vermelho com transparência para o polegar */
-    border-radius: 6px; /* Bordas arredondadas */
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 6px; 
 }
 
-/* Efeito de transição suave ao passar o mouse sobre o polegar */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 0, 0, 0.8); /* Vermelho mais intenso ao passar o mouse */
+    background: rgba(255, 0, 0, 0.8); 
 }
 
-/* Escondendo as setas padrão */
 ::-webkit-scrollbar-button {
-    display: none; /* Esconde as setas padrão */
+    display: none; 
 }
 
-/* Estilizando a barra de rolagem para Firefox */
-scrollbar-width: thin; /* Para Firefox */
-scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com vermelho transparente */
+scrollbar-width: thin; 
+scrollbar-color: rgba(255, 0, 0, 0.6) transparent;
 
 
 
 
-/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     header {
         padding: 20px;
     }
 
     header h1 {
-        font-size: 1.8em; /* Reduz o tamanho do título */
+        font-size: 1.8em; 
         padding-bottom: 15px;
     }
 
     .header-content {
-        flex-direction: column; /* Empilha o conteúdo verticalmente em telas menores */
+        flex-direction: column; 
         text-align: center;
     }
 
     .icon {
-        width: 60px; /* Reduz o tamanho do ícone */
+        width: 60px; 
         height: 60px;
     }
 
     nav ul li {
-        display: block; /* Empilha os itens do menu verticalmente */
-        margin: 10px 0; /* Espaçamento entre os itens */
+        display: block; 
+        margin: 10px 0; 
     }
 
     main {
-        max-width: 90%; /* Aumenta a largura em telas menores */
+        max-width: 90%; 
         margin: 10px auto;
         padding: 15px;
     }
 
     .npc-item, .local-item {
-        flex-direction: column; /* Empilha o conteúdo dos itens */
+        flex-direction: column; 
         text-align: center;
     }
 
     .npc-image, .local-image {
-        width: 50px; /* Ajusta o tamanho das imagens */
+        width: 50px; 
         height: 50px;
-        margin-bottom: 10px; /* Espaço entre imagem e conteúdo */
-        margin-right: 0; /* Remove o espaçamento lateral */
+        margin-bottom: 10px;
+        margin-right: 0; 
     }
 
     h2 {
-        font-size: 1.5em; /* Reduz o tamanho dos subtítulos */
+        font-size: 1.5em; 
     }
 
     input, textarea {
-        font-size: 1em; /* Ajusta o tamanho do texto nos campos */
+        font-size: 1em; 
     }
 
     button {
-        padding: 0.6em 1em; /* Ajusta o padding para telas menores */
-        font-size: 1em; /* Ajusta o tamanho do texto nos botões */
+        padding: 0.6em 1em; 
+        font-size: 1em; 
     }
 }
 
-/* Ajustes para telas muito pequenas, como smartphones em modo retrato */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.5em; /* Reduz o título ainda mais */
-    }
+        font-size: 1.5em;
 
     .icon {
-        width: 50px; /* Ajuste adicional no tamanho do ícone */
+        width: 50px; 
         height: 50px;
     }
 
     nav ul li {
-        margin: 5px 0; /* Espaçamento reduzido entre itens do menu */
+        margin: 5px 0; 
     }
 
     main {
-        padding: 10px; /* Ajusta o padding para telas pequenas */
+        padding: 10px; 
     }
 
     .npc-item, .local-item {
@@ -617,12 +604,12 @@ scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com verm
     }
 
     input, textarea {
-        padding: 10px; /* Reduz o espaçamento interno */
-        font-size: 0.9em; /* Reduz o tamanho da fonte */
+        padding: 10px; 
+        font-size: 0.9em; 
     }
 
     button {
         padding: 0.5em 0.8em;
-        font-size: 0.9em; /* Ajuste adicional para o botão */
+        font-size: 0.9em; 
     }
 }

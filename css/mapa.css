@@ -1,74 +1,68 @@
-
-
 body {
-    background-image: url('../public/imgs/bounty3.jpg'); /* Caminho para a imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    background-attachment: fixed; /* Fixa a imagem no fundo enquanto rola */
-    margin: 0; /* Remove margens padrão do corpo */
-    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    background-image: url('../public/imgs/bounty3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 
 
-/* Estilo para a seção das anotações */
+
 .card {
-    width: 80%; /* Largura responsiva */
-    max-width: 900px; /* Limite máximo para largura */
-    height: auto; /* Altura automática para se ajustar ao conteúdo */
-    margin: 20px auto; /* Centraliza a seção */
+    width: 80%; 
+    max-width: 900px; 
+    height: auto;
+    margin: 20px auto; 
     border-radius: 30px;
-    background: rgba(0, 0, 0, 0.5); /* Cor de fundo clara com 50% de opacidade */
+    background: rgba(0, 0, 0, 0.5); 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
-    padding: 20px; /* Espaçamento interno */
+    padding: 20px; 
 }
 
 
 h2 {
-    text-align: center; /* Centraliza o título */
-    color: #ff0000; /* Define a cor do texto como branca */
+    text-align: center;
+    color: #ff0000; 
 }
 
 
 iframe {
-    border: none; /* Remove a borda padrão do iframe */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra */
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 900px; /* Largura máxima */
-    height: 600px; /* Altura fixa */
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente */
-    display: block; /* Garante que o iframe se comporte como um bloco */
-    margin: 20px auto; /* Centraliza */
-    transition: transform 0.3s; /* Transição suave */
+    border: none; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    max-width: 900px; 
+    height: 600px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block; 
+    margin: 20px auto; 
+    transition: transform 0.3s; 
 }
 
 iframe:hover {
-    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+    transform: scale(1.02); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); 
 }
-/* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {
-    width: 12px; /* Largura da barra de rolagem vertical */
-    background: url('../public/imgs/21\ -\ O\ Panteao.jpg'); /* Fundo da barra de rolagem */
-    background-size: cover; /* Faz a imagem cobrir toda a barra */
+    width: 12px; 
+    background: url('../public/imgs/21\ -\ O\ Panteao.jpg');
+    background-size: cover; 
 }
 
-/* Estilizando o polegar (a parte que se move) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.6); /* Fundo vermelho com transparência para o polegar */
-    border-radius: 6px; /* Bordas arredondadas */
+    background: rgba(0, 0, 0, 0.6); 
+    border-radius: 6px; 
 }
 
-/* Efeito de transição suave ao passar o mouse sobre o polegar */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 0, 0, 0.8); /* Vermelho mais intenso ao passar o mouse */
+    background: rgba(255, 0, 0, 0.8);
 }
 
-/* Escondendo as setas padrão */
 ::-webkit-scrollbar-button {
-    display: none; /* Esconde as setas padrão */
+    display: none; 
 }
 
 /* Estilizando a barra de rolagem para Firefox */
@@ -83,7 +77,7 @@ scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com verm
 .anotacoes-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza todos os elementos horizontalmente */
+    align-items: center;
     margin: 20px;
     text-align: center;
 }
@@ -92,13 +86,13 @@ scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com verm
     font-size: 24px;
     color: #333;
     margin-bottom: 15px;
-    text-align: center; /* Centraliza o título */
+    text-align: center; 
 }
 
 .post-it-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza os post-its */
+    justify-content: center; 
     width: 100%;
     max-width: 1000px;
 }
@@ -137,10 +131,9 @@ scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com verm
     background-color: rgba(255, 255, 220, 0.85);
 }
 
-/* Centraliza o botão */
 .add-post-it {
-    display: block; /* Garante que o botão se comporte como um bloco */
-    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    display: block; 
+    margin: 20px auto; 
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;
@@ -156,7 +149,7 @@ scrollbar-color: rgba(255, 0, 0, 0.6) transparent; /* Mantém o polegar com verm
 
 
 header {
-    background: linear-gradient(90deg, #000000, #000000); /* Gradiente para o cabeçalho */
+    background: linear-gradient(90deg, #000000, #000000); 
     color: #ffffff;
     padding: 30px;
     text-align: center;
@@ -167,19 +160,19 @@ header h1 {
     margin: 0;
     font-size: 3em;
     padding-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(236, 238, 255, 0.6); /* Sombra forte para o título */
+    text-shadow: 2px 2px 8px rgba(236, 238, 255, 0.6); 
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de transparência */
+    background-color: rgba(0, 0, 0, 0.5); 
     background-image: url('../public/imgs/21\ -\ O\ Panteao.jpg');
-    background-size: cover; /* Faz a imagem cobrir todo o nav */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; 
+    background-position: center; 
     padding:5px 0;
-    border-radius: 10px; /* Bordas arredondadas */
-    width: 100%; /* Faz o menu ocupar toda a largura da página */
+    border-radius: 10px; 
+    width: 100%; 
     text-align: center;
-    box-shadow: 0 4px 15px rgba(255, 17, 0, 0.5); /* Sombra para destacar o menu */
+    box-shadow: 0 4px 15px rgba(255, 17, 0, 0.5); 
 }
 
 nav ul {
@@ -190,20 +183,19 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 20px; /* Espaço entre os itens do menu */
+    margin: 0 20px;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, text-shadow 0.3s, transform 0.3s ease-in-out; /* Adicione ease-in-out para um efeito mais suave */
+    transition: color 0.3s, text-shadow 0.3s, transform 0.3s ease-in-out; 
 }
 
 nav a:hover {
     text-shadow: 0 0 5px #ff0000, 0 0 10px #fa4700;
-    transform: scale(1.15) rotate(1deg); /* Aumenta o tamanho em 15% e aplica uma leve rotação */
-}
+    transform: scale(1.15) rotate(1deg); 
 
 
 
@@ -211,99 +203,9 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0); /* Fundo totalmente transparente */
+    background: rgba(255, 255, 255, 0); 
     border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.8); /* Sombra mais pronunciada */
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.8); 
     color: white;
 }
 
-/* Telas muito pequenas (ex: celulares em retrato) */
-@media (max-width: 480px) {
-    .card, iframe, main, .post-it-wrapper, .post-it {
-        width: 90%;
-        padding: 10px;
-    }
-    
-    h2 {
-        font-size: 20px;
-    }
-    
-    .post-it {
-        width: 150px;
-        height: 150px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-    
-    nav ul li {
-        margin: 0 10px;
-    }
-}
-
-/* Telas pequenas (ex: celulares grandes e tablets em retrato) */
-@media (max-width: 768px) {
-    .card, iframe, main, .post-it-wrapper, .post-it {
-        width: 90%;
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    .post-it {
-        width: 180px;
-        height: 180px;
-    }
-    
-    nav ul li {
-        margin: 0 15px;
-    }
-}
-
-/* Telas médias (ex: tablets em paisagem e telas menores de desktop) */
-@media (max-width: 992px) {
-    .card, iframe, main, .post-it-wrapper, .post-it {
-        width: 85%;
-    }
-
-    header h1 {
-        font-size: 2.8em;
-    }
-
-    .post-it {
-        width: 200px;
-        height: 200px;
-    }
-
-    .add-post-it {
-        padding: 8px 16px;
-        font-size: 0.9em;
-    }
-}
-
-/* Telas grandes (ex: desktop padrão) */
-@media (min-width: 1200px) {
-    .card, iframe, main {
-        width: 80%;
-    }
-
-    header h1 {
-        font-size: 3em;
-    }
-
-    .post-it {
-        width: 220px;
-        height: 220px;
-    }
-
-    .add-post-it {
-        font-size: 1em;
-    }
-}
